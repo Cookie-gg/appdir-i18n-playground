@@ -21,7 +21,6 @@ export default async function Page({
   params?: any;
   children?: React.ReactNode;
 }) {
-  console.log(params);
   const data = await fetchData(params);
 
   return (
