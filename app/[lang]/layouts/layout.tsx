@@ -9,6 +9,7 @@ export default async function Layout({
   children: React.ReactNode;
 }) {
   const categories = await fetchCategories();
+
   return (
     <div className="space-y-9">
       <div className="flex justify-between">
