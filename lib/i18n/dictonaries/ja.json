@@ -1,0 +1,87 @@
+{
+  "GlobalNav": {
+    "appName": "アップディレクトリ",
+    "demos": [
+      {
+        "name": "レイアウト",
+        "items": [
+          {
+            "name": "ネストレイアウト",
+            "slug": "layouts",
+            "description": "ルートにまたがって共有されるUIを作成する"
+          },
+          {
+            "name": "グループ化されたレイアウト",
+            "slug": "route-groups",
+            "description": "URLのパスに影響を与えずにルートを整理する"
+          },
+          {
+            "name": "サスペンド付きストリーミング",
+            "slug": "streaming",
+            "description": "React Suspenseでサーバーからデータを取得するストリーミング"
+          }
+        ]
+      },
+      {
+        "name": "ファイル規約",
+        "items": [
+          {
+            "name": "loading.js",
+            "slug": "loading",
+            "description": "アプリの特定の部分に対して意味のあるローディングUIを作成する"
+          },
+          {
+            "name": "error.js",
+            "slug": "error-handling",
+            "description": "アプリの特定部分に対するエラーUIを作成する"
+          },
+          {
+            "name": "head.js",
+            "slug": "head",
+            "description": "ルートセグメントの <head> タグを設定する"
+          }
+        ]
+      },
+      {
+        "name": "データフェッチ",
+        "items": [
+          {
+            "name": "Static-Site Generation",
+            "slug": "ssg",
+            "description": "静的ページの生成"
+          },
+          {
+            "name": "サーバーサイドレンダリング",
+            "slug": "ssr",
+            "description": "サーバーレンダリングページ"
+          },
+          {
+            "name": "インクリメンタルスタティック再生",
+            "slug": "isr",
+            "description": "スタティックとダイナミックの両方の長所を得る"
+          }
+        ]
+      },
+      {
+        "name": "コンポーネント",
+        "items": [
+          {
+            "name": "クライアントコンテキスト",
+            "slug": "context",
+            "description": "サーバー/クライアントコンポーネントの境界を越えるクライアントコンポーネント間のコンテキストの受け渡し"
+          }
+        ]
+      },
+      {
+        "name": "スタイリング",
+        "items": [
+          {
+            "name": "CSSとCSS-in-JS",
+            "slug": "styling",
+            "description": "サポートされているスタイリングソリューションのプレビュー"
+          }
+        ]
+      }
+    ]
+  }
+}

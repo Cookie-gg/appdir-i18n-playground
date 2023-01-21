@@ -1,4 +1,9 @@
-# Next.js App Directory Playground
+# Next.js App Directory Playground with International Routing
+
+Now support both English and Japanese.
+international routing with template below.
+
+template: https://vercel.com/templates/next.js/app-directory
 
 Next.js introduced the `app/` directory (beta). This is the result of the [Layouts RFC](https://nextjs.org/blog/layouts-rfc) previously published for community feedback. This includes support for:
 

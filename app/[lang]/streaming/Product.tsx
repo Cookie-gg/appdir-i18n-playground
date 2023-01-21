@@ -1,4 +1,4 @@
-import { Pricing, PricingSkeleton } from '#/app/streaming/Pricing';
+import { Pricing, PricingSkeleton } from '#/app/[lang]/streaming/Pricing';
 import { type IProduct } from '#/lib/data/products';
 import { ProductRating } from '#/ui/ProductRating';
 import Image from 'next/image';

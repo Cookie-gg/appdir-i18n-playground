@@ -1,24 +1,38 @@
+import { Locale } from '#/lib/i18n';
+import { getDictionary } from '#/lib/i18n/dictonaries';
 import '#/styles/globals.css';
 import { AddressBar } from '#/ui/AddressBar';
 import { GlobalNav } from '#/ui/GlobalNav';
+import { LangButton } from '#/ui/LangButton';
 import { VercelLogo } from '#/ui/VercelLogo';
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { lang: Locale };
 }) {
+  const dictionary = await getDictionary(params.lang);
+
   return (
     <html lang="en" className="[color-scheme:dark]">
       <head />
       <body className="overflow-y-scroll bg-gray-1100 bg-[url('/grid.svg')]">
-        <GlobalNav />
+        <GlobalNav dictionary={dictionary.GlobalNav} />
 
         <div className="lg:pl-72">
           <div className="mx-auto max-w-4xl space-y-8 px-2 pt-20 lg:py-8 lg:px-8">
-            <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20">
-              <div className="rounded-lg bg-black">
-                <AddressBar />
+            <div className="flex justify-between gap-x-4">
+              <div className="rounded-lg bg-vc-border-gradient p-px shadow-lg shadow-black/20 grow">
+                <div className="rounded-lg bg-black">
+                  <AddressBar />
+                </div>
+              </div>
+              <div className="rounded-lg border border-[#27272a] w-11 shadow-lg shadow-black/20 hover:border-white transition-colors cursor-pointer">
+                <div className="rounded-lg bg-black h-full grid place-items-center">
+                  <LangButton lang={params.lang} />
+                </div>
               </div>
             </div>
 
